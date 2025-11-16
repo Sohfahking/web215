@@ -1,0 +1,109 @@
+/* CSS HEX */
+:root {
+    --smoky-black: #0b0a07ff;
+    --celadon: #bbcea8ff;
+    --flax: #e3d87eff;
+    --icterine: #f0ec57ff;
+    --reseda-green: #748067ff;
+}
+
+/* Basic page styling */
+body {
+  margin: 0;
+  padding: 10px;
+  background: var(--flax);
+  color: var(--smoky-black);
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Header (right aligned) */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  background-color: var(--paynes-gray);
+  border-radius: 10px;
+  color: var(--mint-green);
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+h2, h3, h4, h5, h6 {
+  color: var(--smoky-black);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navigation Bar */
+header nav {
+  text-align: right;
+  background-color: var(--reseda-green);
+  padding: 10px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--flax);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--smoky-black);
+}
+
+main {
+  box-sizing: border-box;
+  background-color: var(--celadon);
+  border-radius: 10px;
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  color: var(--paynes-gray);
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--smoky-black);
+  color: var(--icterine);
+  padding: 10px;
+  text-align: center;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--icterine);
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--celadon);
+}
+
+footer p {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
