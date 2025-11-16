@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Index/Home">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Dajabre Torain">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  Link to CSS file(s) -->
+  <link rel="stylesheet" href="styles/default.css">
+
+  <title> Dajabre Torain's Daring Tiger | WEB215 | Template Page - CHANGE FOR THIS PAGE </title>
+
+  <script src="https://lint.page/kit/6664c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+      <h1>Dajabre Torain's Daring Tiger | WEB215</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html" title="Home">Home</a></li>
+          <li><a href="./intro215.html" title="Introduction">Introduction</a></li>
+          <li><a href="./contract215.html" title="My Contract">Contract</a></li>
+          <li><a href="./brand215.html" title="My Brand">Brand</a></li>
+        </ul>
+      </nav>
+    </header>
+
+ <main>
+    <h2>Brand Identity</h2>
+    <h3><em>Clothes should be made to fit you, not the other way around.</em></h3>
+
+    <figure>
+      <img src="images/mbdLogo.png" alt="Made By Dice Brand Logo"> 
+      <figcaption><em>My Clothing Brand</em></figcaption>
+    </figure>
+
+    <p>Welcome to my brand page! Made By Dice is a clothing brand whose mission is to teach you how to make inclusive, handmade
+      clothing for all shapes and sizes. Our motto is that clothes should be made to fit you, not the other way around. 
+      Below, you'll find the color palette and typography used to create the visual identity of this site.</p>
+    
+    <h3>Color Palette</h3>
+    <div class="color-palette">
+      <div class="color-box" style="background-color: #100f0f; color:#ebe3c3; border-color:#100f0f;">Cod Gray</div>
+      <div class="color-box" style="background-color: #ebe3c3; color:#3c2414; border-color: #100f0f;">Double Spanish White</div>
+      <div class="color-box" style="background-color: #7c5434; color:#ebe3c3; border-color:#100f0f;">Old Copper</div>
+      <div class="color-box" style="background-color: #a99273; color:#100f0f; border-color:#100f0f;">Sandal</div>
+      <div class="color-box" style="background-color: #baad93; color:#100f0f; border-color:#100f0f;">Heathered Gray</div>
+      <div class="color-box" style="background-color: #9c7c5c; color:#100f0f; border-color:#100f0f;">Leather</div>
+      <div class="color-box" style="background-color: #3c2414; color:#ebe3c3; border-color:#100f0f;">Cedar</div>
+    </div>
+    
+    <h3>Typography</h3>
+      <p style="font-family: Arial, sans-serif; font-weight: bold;">This is Arial font - used for headings.</p>
+      <p style="font-family: Georgia, serif;">This is Georgia font - used for body text.<br><br></p>
+  </main>
+
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/Sohfahking" target="_blank" title="GitHub">GitHub</a></li>
+        <li><a href="http://Sohfahking.GitHub.io" target="_blank" title="GitHub.io">GitHub.io</a></li>
+        <li><a href="https://sohfahking.github.io/web115/" target="_blank" title="WEB115">WEB115.io</a></li>
+        <li><a href="https://sohfahking.github.io/web215/" target="_blank" title="WEB215">WEB215.io</a></li>
+        <li><a href="https://sohfahking.github.io/web250/" target="_blank" title="WEB250">WEB250.io</a></li>
+        <li><a href="https://www.freecodecamp.org/DajabreTorain" target="_blank" title="freeCodeCamp">freeCodeCamp</a>
+        </li>
+        <li><a href="https://www.codecademy.com/profiles/DajabreTorain" target="_blank"
+          title="Codecademy">Codecademy</a></li>
+        <li><a href="https://jsfiddle.net/user/DajabreTorain" target="_blank" title="JSFiddle">JSFiddle</a></li>
+        <li><a href="https://www.linkedin.com/in/dajabre-torain/" target="_blank" title="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <p> Website Designed By Dajabre Torain | &copy;2025 </p>
+  </footer>
+</body>
+</html>
