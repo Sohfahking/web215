@@ -1,10 +1,10 @@
 /* CSS HEX */
 :root {
-    --smoky-black: #0b0a07ff;
-    --celadon: #bbcea8ff;
-    --flax: #e3d87eff;
-    --icterine: #f0ec57ff;
-    --reseda-green: #748067ff;
+  --smoky-black: #0b0a07ff;
+  --celadon: #bbcea8ff;
+  --flax: #e3d87eff;
+  --icterine: #f0ec57ff;
+  --reseda-green: #748067ff;
 }
 
 /* Basic page styling */
@@ -31,7 +31,11 @@ h1 {
 }
 
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--smoky-black);
   font-weight: bold;
   text-align: center;
@@ -70,6 +74,21 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   line-height: 1.6;
   color: var(--smoky-black);
+}
+
+/* styles/default.css */
+main figure {
+  text-align: center;
+  /* center the caption */
+  margin: 20px auto;
+  /* center the figure block itself */
+}
+
+main figcaption {
+  display: block;
+  /* make image a block element */
+  margin: 0 auto;
+  /* center the image */
 }
 
 /* Footer */
