@@ -19,95 +19,81 @@
     <script src="https://lint.page/kit/6664c1.js" crossorigin="anonymous"></script>
 
     <style>
-        main {
-  box-sizing: border-box;
-  background-color: var(--celadon);
-  border-radius: 10px;
-  margin: 1rem auto 2rem;
-  max-width: 800px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  line-height: 1.6;
-  color: var(--smoky-black);
-}
+        /* ------------------ Form Styling ------------------ */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
+        fieldset {
+            border: 2px solid var(--reseda-green);
+            border-radius: 8px;
+            padding: 15px;
+            background-color: var(--flax);
+        }
 
-/* ------------------ Form Styling ------------------ */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            color: var(--smoky-black);
+        }
 
-fieldset {
-  border: 2px solid var(--reseda-green);
-  border-radius: 8px;
-  padding: 15px;
-  background-color: var(--flax);
-}
+        label {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-legend {
-  font-weight: bold;
-  padding: 0 10px;
-  color: var(--smoky-black);
-}
+        input[type="text"],
+        textarea {
+            padding: 8px;
+            border: 1px solid var(--reseda-green);
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+        textarea {
+            resize: vertical;
+        }
 
-input[type="text"],
-textarea {
-  padding: 8px;
-  border: 1px solid var(--reseda-green);
-  border-radius: 5px;
-  font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-}
+        button[type="submit"] {
+            background-color: var(--reseda-green);
+            color: var(--smoky-black);
+            font-weight: bold;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            align-self: flex-start;
+        }
 
-textarea {
-  resize: vertical;
-}
+        button[type="submit"]:hover {
+            background-color: var(--icterine);
+            transform: scale(1.05);
+        }
 
-button[type="submit"] {
-  background-color: var(--reseda-green);
-  color: var(--smoky-black);
-  font-weight: bold;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  align-self: flex-start;
-}
+        /* Smaller note for extra courses */
+        form p {
+            font-size: 0.85rem;
+            color: var(--smoky-black);
+            margin-top: 5px;
+        }
 
-button[type="submit"]:hover {
-  background-color: var(--icterine);
-  transform: scale(1.05);
-}
+        /* Optional: make fieldsets stack nicely on mobile */
+        @media (max-width: 600px) {
+            fieldset {
+                padding: 10px;
+            }
 
-/* Smaller note for extra courses */
-form p {
-  font-size: 0.85rem;
-  color: var(--smoky-black);
-  margin-top: 5px;
-}
-
-/* Optional: make fieldsets stack nicely on mobile */
-@media (max-width: 600px) {
-  fieldset {
-    padding: 10px;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-  }
-}
-
+            button[type="submit"] {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
