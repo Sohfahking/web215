@@ -42,13 +42,23 @@ $funFact = $_POST['funFact'] ?? '';
     <header></header>
     <main>
         <h2>Introduction</h2>
+
         <?php
+        // Collect submitted values
+        $first = trim($_POST['first'] ?? '');
+        $middle = trim($_POST['middle'] ?? '');
+        $last = trim($_POST['last'] ?? '');
+
+        // Process middle initial: take only the first character, uppercase, add a period
+        if (!empty($middle)) {
+            $middle = strtoupper(substr($middle, 0, 1)) . ".";
+        }
+        
         $fullName = trim("$first $middle $last");
         if (!empty($fullName)) :
         ?>
             <h3><?php echo htmlspecialchars($fullName); ?></h3>
         <?php endif; ?>
-
 
         <figure style="text-align:center; margin:20px auto;">
             <img src="images/gudetamame.png" alt="Profile Image" style="display:block; margin:0 auto;">
